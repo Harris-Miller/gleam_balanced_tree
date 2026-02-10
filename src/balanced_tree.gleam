@@ -1,7 +1,8 @@
 //// BalancedTree is a Gleam friendly wrapper around erlang's gb_trees module
-//// https://www.erlang.org/doc/apps/stdlib/gb_trees.html
-//// This only wraps the functionality needed for LIFOHeap, so keeping internal for now.
-//// Eventually I'll complete the wrap and move it to its own `balanced_tree` package
+//// It implements the same functions as gleam/dict, a few from gleam/list, and some additional that are unique to gb_trees
+//// 
+//// Build Target is Erlang-only. I may consider writing a javascript implementation in the future
+////
 
 import gleam/dict.{type Dict}
 import gleam/list

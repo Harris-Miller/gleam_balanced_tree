@@ -1,10 +1,20 @@
 import balanced_tree
+import gleam/dict
 import gleam/yielder
 import gleeunit
 import gleeunit/should
 
 pub fn main() {
   gleeunit.main()
+}
+
+pub fn from_dict_test() {
+  let dict =
+    dict.from_list([#(5, "a"), #(7, "b"), #(3, "c"), #(1, "d"), #(9, "e")])
+  let tree = balanced_tree.from_dict(dict)
+
+  balanced_tree.to_list(tree)
+  |> should.equal([#(1, "d"), #(3, "c"), #(5, "a"), #(7, "b"), #(9, "e")])
 }
 
 pub fn get_works_with_lookup_shim_test() {

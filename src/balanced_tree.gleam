@@ -47,8 +47,9 @@ fn gb_trees_enter(
   gb_tree: BalancedTree(k, v),
 ) -> BalancedTree(k, v)
 
+/// contrary to the name of the function, the erlang function accepts a standard List
 @external(erlang, "gb_trees", "from_orddict")
-pub fn gb_trees_from_orddict(list: List(#(k, v))) -> BalancedTree(k, v)
+fn gb_trees_from_orddict(list: List(#(k, v))) -> BalancedTree(k, v)
 
 @external(erlang, "gb_trees", "is_defined")
 fn gb_trees_is_defined(key: k, gb_tree: BalancedTree(k, v)) -> Bool

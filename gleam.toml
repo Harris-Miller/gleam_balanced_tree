@@ -2,7 +2,7 @@
 
 name = "balanced_tree"
 version = "0.1.0"
-description = "A collection of common Search Algorithms"
+description = "A Gleam friendly wrapper around Erlang's gb_trees module"
 
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "harris-miller", repo = "gleam_balanced_tree" }

@@ -248,10 +248,12 @@ fn iterate_internal(tree: BalancedTree(k, v), order: Order) -> Yielder(#(k, v)) 
   })
 }
 
+/// Generate a `Yielder` that traverses in the tree in min-to-max order
 pub fn iterate(tree: BalancedTree(k, v)) -> Yielder(#(k, v)) {
   iterate_internal(tree, Ordered)
 }
 
+/// Generate a `Yielder` that traverses in the tree in max-to-min order
 pub fn iterate_right(tree: BalancedTree(k, v)) -> Yielder(#(k, v)) {
   iterate_internal(tree, Reversed)
 }

@@ -1,4 +1,4 @@
-import data/balanced_tree
+import balanced_tree
 import gleam/yielder
 import gleeunit
 import gleeunit/should

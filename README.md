@@ -1,20 +1,20 @@
-# data_structures
+# balanced_tree
 
-[![Package Version](https://img.shields.io/hexpm/v/data_structures)](https://hex.pm/packages/data_structures)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/data_structures/)
+[![Package Version](https://img.shields.io/hexpm/v/balanced_tree)](https://hex.pm/packages/balanced_tree)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/balanced_tree/)
 
 ```sh
-gleam add data_structures@1
+gleam add balanced_tree@1
 ```
 ```gleam
-import data_structures
+import balanced_tree
 
 pub fn main() -> Nil {
   // TODO: An example of the project in use
 }
 ```
 
-Further documentation can be found at <https://hexdocs.pm/data_structures>.
+Further documentation can be found at <https://hexdocs.pm/balanced_tree>.
 
 ## Development
 

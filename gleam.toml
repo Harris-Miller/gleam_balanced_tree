@@ -1,6 +1,6 @@
 # https://gleam.run/writing-gleam/gleam-toml/.
 
-name = "gleam_balanced_tree"
+name = "balanced_tree_gleam"
 version = "0.1.0"
 description = "A Gleam friendly wrapper around Erlang's gb_trees module"
 
